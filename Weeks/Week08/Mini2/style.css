@@ -1,0 +1,12 @@
+#box2 {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  margin-top: 300px;
+  position: absolute;
+}
+
+button {
+  margin-top: 20px;
+  margin-right: 10px;
+}

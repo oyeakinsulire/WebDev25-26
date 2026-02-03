@@ -1,0 +1,51 @@
+/* Import a Google Font */
+@import url('https://fonts.google.com/specimen/Cinzel');
+
+body {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Header section */
+header {
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  padding: 2rem;
+  border-bottom: 4px solid #000000;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Main content */
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.3rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #ffffff;
+  padding-left: 1rem;
+  color: #ffffff;
+}

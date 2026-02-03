@@ -1,0 +1,12 @@
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    margin-top: 300px;
+    position: absolute;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  

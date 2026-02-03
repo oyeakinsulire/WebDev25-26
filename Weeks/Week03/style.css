@@ -1,0 +1,63 @@
+body {
+  background: radial-gradient(circle at top, #a3d3ff, #ffb3f1, #ffd36a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.portrait {
+  position: relative;
+  width: 250px;
+  height: 400px;
+}
+
+/* Head */
+.head {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140§px;
+  height: 180px;
+  background: #7b563f;
+  border-radius: 50% 50% 45% 45%;
+}
+
+/* Glasses */
+.glasses {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.lens {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+  border: 6px solid gray;
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  border-radius: 50%;
+  background: #4d3223;
+}
+
+
+
+.spark:nth-child(1) { top: 20px; left: 50%; transform: translateX(-50%) rotate(0deg); }
+.spark:nth-child(2) { top: 40px; left: 80%; transform: rotate(30deg); }
+.spark:nth-child(3) { top: 40px; left: 20%; transform: rotate(-30deg); }
