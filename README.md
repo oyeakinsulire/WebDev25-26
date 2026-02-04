@@ -25,3 +25,5 @@ Week 06: Implementation of the Abstract Clock Design and Typewriter Effect, util
 Week 08: The HTML Form Study, reimagining standard inputs like sliders ("Control the Chaos"), checkboxes, and radio buttons as generative visual elements.
 
 Week 09: Development of a Scrollytelling project, focusing on narrative-driven interactions triggered by user scroll behavior.
+
+Week 11: Creation of 3d shape with three.js that rotates continously
