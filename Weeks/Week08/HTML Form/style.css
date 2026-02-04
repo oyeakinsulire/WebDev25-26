@@ -1,0 +1,9 @@
+#art-canvas {
+  position: relative;
+  height: 80vh;
+}
+
+.shape {
+  position: absolute; /* This allows you to scatter them */
+  transition: transform 0.3s ease; /* Makes movement look smooth */
+}
