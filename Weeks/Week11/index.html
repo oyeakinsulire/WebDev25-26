@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Animation</title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script>
+  //   setup the stage
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('myCanvas') });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // create a cube
+  const geometry = new THREE.BoxGeometry(1, 1, 1); // cube shape
+  const material = new THREE.MeshStandardMaterial({ color: 0xffffff }); // White color
+  const cube = new THREE.Mesh(geometry, material); 
+  scene.add(cube); 
+
+  // add light
+  const light = new THREE.PointLight(0xffffff, 50);
+  light.position.set(5, 5, 5);
+  scene.add(light);
+
+  camera.position.z = 5;
+
+  // Gsap animation to make it spin
+  gsap.to(cube.rotation, { duration: 5, y: Math.PI * 2, repeat: -1, ease: "none" });
+
+  // loop to keep the animation running
+  function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+  }
+  animate();
+</script>
