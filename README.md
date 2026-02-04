@@ -20,10 +20,14 @@ Week 02: Exploration of Hyperlinks and non-linear navigation as an artistic tool
 
 Week 03: Creation of a Self Portrait using web technologies.
 
+Week 04 & 05 - Drafts of Portfolio design.
+
 Week 06: Implementation of the Abstract Clock Design and Typewriter Effect, utilizing real-time JavaScript Date() functions and dynamic CSS gradients.
 
 Week 08: The HTML Form Study, reimagining standard inputs like sliders ("Control the Chaos"), checkboxes, and radio buttons as generative visual elements.
 
 Week 09: Development of a Scrollytelling project, focusing on narrative-driven interactions triggered by user scroll behavior.
+
+Week 10: Final Website Design
 
 Week 11: Creation of 3d shape with three.js that rotates continously
