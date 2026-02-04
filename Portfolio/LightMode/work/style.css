@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Website Variables */
+:root {
+  --bg: url('../../Assets/WBackground.png');
+  --main: #2A271F;
+  --sub: #654e0b;
+  --font: 'Courier New', monospace;
+  --text-light: #ebe7e7; 
+  --text-light-muted: #c5c0c0;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  height: 100vh;
+  background: var(--bg) center / cover no-repeat;
+  overflow: hidden;
+}
+/* Main container */
+.home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 135px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-auto-rows: minmax(220px, auto);
+  gap: 12px;
+  align-content: start;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 2px solid #090907;
+  padding: 8px;  
+  cursor: pointer;                   
+  text-decoration: none;             
+  color: inherit;                     
+}
+
+/* Hover State */
+.card:hover,
+.card:focus {
+  background-color: var(--main);
+  border-color: var(--main);
+  outline: none;
+}
+
+/* Text Color Changes on Hover */
+.card:hover .week,
+.card:focus .week {
+  color: var(--text-light);
+}
+
+.card:hover .description,
+.card:focus .description {
+  color: var(--text-light-muted);
+}
+
+.card:hover .site,
+.card:focus .site {
+  color: var(--text-light);
+  text-decoration-color: var(--text-light-muted);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+/* Featured Works + Divider */
+.featured-header {
+  grid-column: 1 / -1;
+}
+
+.works {
+  color: var(--main);
+  font-family: "Spline Sans";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* Divider Line */
+.box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.line-stroke {
+  width: 100%;
+  max-width: 1600px;
+  height: 1.5px;
+  background-color: var(--main);
+}
+
+/* Week Title */
+.week {
+  color: var(--sub);
+  font-family: "Bebas Neue";
+  font-size: clamp(80px, 11vw, 128px);
+  line-height: 90%;
+  letter-spacing: -2.5px;
+  transition: color 0.25s ease;
+}
+
+/* Description */
+.description {
+  color: var(--main);
+  font-family: "Spline Sans";
+  font-size: 13.5px;
+  line-height: 1.25;
+  max-width: 280px;
+  transition: color 0.25s ease;
+}
+
+/* Visit Site Link */
+.site {
+  color: var(--main);
+  font-family: "Spline Sans";
+  font-size: 13.5px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-top: auto;
+  transition: all 0.25s ease;
+}
+
+/* Fixed Elements */
+.logo {
+  /* fixed so logo stays in the same viewport position across pages */
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 20;
+  width: 95px;
+  height: 55px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu-button {
+  position: fixed;
+  right: 20px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 20;
+  color: var(--main);
+  font-family: 'Originals', sans-serif;
+  transition: opacity 0.25s;
+}
+
+.menu-button:hover {
+  opacity: 0.75;
+}
+
+.menu-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--main);
+}
+
+
+/* Mode toggle button (bottom-right) */
+#mode-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0, 0, 0, 0.244);
+  color: var(--sub);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 180ms ease, transform 150ms ease, color 180ms ease;
+}
+#mode-toggle:hover { transform: translateY(-3px); background: rgba(0,0,0,0.5);
+}
