@@ -1,0 +1,12 @@
+.art-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dashed #555;
+  transition: all 0.3s ease;
+}
+
+.art-link:hover {
+  color: #ff00ff; /* A bright neon glow on hover */
+  background-color: #121212;
+  letter-spacing: 2px;
+}
