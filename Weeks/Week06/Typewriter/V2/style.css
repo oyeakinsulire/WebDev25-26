@@ -1,0 +1,53 @@
+body {
+  background: #111;
+  color: #f2f2f2;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+textarea {
+  width: 80%;
+  max-width: 600px;
+  height: 120px;
+  background: #222;
+  color: #f2f2f2;
+  border: 1px solid #444;
+  padding: 12px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+button {
+  background: #444;
+  color: #f2f2f2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: inherit;
+}
+button:hover {
+  background: #666;
+}
+
+#typewriter {
+  font-size: 1.3rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  min-height: 2em;
+}
+
+.caret {
+  display: inline-block;
+  width: 10px;
+  background: #f2f2f2;
+  animation: blink 0.7s infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

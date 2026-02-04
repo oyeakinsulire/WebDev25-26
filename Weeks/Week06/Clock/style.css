@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000; /* Dark background to match Figma */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+/* Outer Ring - Hours */
+.hours {
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+        #8b1a1a calc(var(--hr-deg) * 1deg), 
+        #1a0505 0deg
+    );
+}
+
+/* Middle Ring - Minutes */
+.minutes {
+    width: 80%;
+    height: 80%;
+    background: conic-gradient(
+        #4caf50 calc(var(--min-deg) * 1deg), 
+        #0a1a0b 0deg
+    );
+}
+
+/* Inner Circle - Seconds */
+.seconds {
+    width: 75%;
+    height: 75%;
+    background: conic-gradient(
+        #2b5876 calc(var(--sec-deg) * 1deg), 
+        #4e4376 0deg
+    );
+}
