@@ -3,6 +3,7 @@ This repository documents the weekly creative and technical progression for the 
 
 # Project Structure
 The root directory is organized as follows to manage global assets and theme-specific implementations:
+Portfolio/
 
 Assets/: Contains global visual resources, including logos (B-Logo.png, W-Logo.png) and subject-specific imagery for both light and dark themes.
 
